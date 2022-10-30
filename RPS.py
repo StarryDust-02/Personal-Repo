@@ -27,6 +27,7 @@ while True:
         if start.lower() != 'yes':
             os.system('cls' if os.name == 'nt' else 'clear')
             print('Thanks for playing!')
+            break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
     
@@ -37,6 +38,7 @@ while True:
         if start.lower() != 'yes':
             os.system('cls' if os.name == 'nt' else 'clear')
             print('Thanks for playing!')
+            break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
     
@@ -47,6 +49,7 @@ while True:
         if start.lower() != 'yes':
             os.system('cls' if os.name == 'nt' else 'clear')
             print('Thanks for playing!')
+            break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
         
@@ -57,6 +60,7 @@ while True:
         if start.lower() != 'yes':
             os.system('cls' if os.name == 'nt' else 'clear')
             print('Thanks for playing!')
+            break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -67,6 +71,7 @@ while True:
         if start.lower() != 'yes':
             os.system('cls' if os.name == 'nt' else 'clear')
             print('Thanks for playing!')
+            break
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
     
