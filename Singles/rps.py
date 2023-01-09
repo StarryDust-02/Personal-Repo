@@ -1,3 +1,5 @@
+"""(c) StarryDust"""
+
 import random, time
 import os
 
