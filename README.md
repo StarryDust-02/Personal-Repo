@@ -1,4 +1,4 @@
-# random-nonsense
+# Random-Nonsense
 Random stuff I wrote.
 
 ## [Mini Projects](https://github.com/StarryDust-02/Random-Nonsense/tree/main/Mini%20Projects)
