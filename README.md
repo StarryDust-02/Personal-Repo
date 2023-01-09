@@ -1,5 +1,5 @@
 # Random-Nonsense
-Random stuff I wrote.
+Random stuff I wrote. Usually, if not always in Python.
 
 
 ## [Mini Projects](https://github.com/StarryDust-02/Random-Nonsense/tree/main/Mini%20Projects)
