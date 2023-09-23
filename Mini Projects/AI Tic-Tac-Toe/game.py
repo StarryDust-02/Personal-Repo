@@ -1,8 +1,8 @@
+# Sample Solution
+
 from functions import clearscreen, wait, newgame
 from functions import get_avaliable_space, place_stone, check_winner, print_board, change_stone
 from functions import greedy_ai_move, random_ai_move
-
-
 
 
 def gameloop() -> None:
