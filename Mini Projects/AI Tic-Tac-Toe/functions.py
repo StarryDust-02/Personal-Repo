@@ -28,8 +28,6 @@ def newgame() -> list:
             ['n', 'n', 'n']
             ]
 
-gameboard = [['n', 'n', 'o'], ['n', 'o', 'o'], ['o', 'x', 'n']]
-
 
 # check avaliable space on board
 def get_avaliable_space(gameboard: list) -> list:
