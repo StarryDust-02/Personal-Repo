@@ -4,7 +4,7 @@
 This file is ONLY for teaching my friend ddggfe how to code in Python
 """
 from typing import Any
-from support_sol import start_counter, clear, game_state
+from support import start_counter, clear, game_state
 import random
 
 #### 通用变量
