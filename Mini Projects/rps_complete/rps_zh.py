@@ -1,7 +1,5 @@
-"""Project 1 Rock Paper Scissors
+"""Rock Paper Scissors
 (c) StarryDust
-
-This file is ONLY for teaching my friend ddggfe how to code in Python
 """
 from typing import Any
 from support import start_counter, clear, game_state
@@ -27,24 +25,25 @@ def main_loop() -> None:
     game_running = game_state(game_running)
 
 
-    # TODO: 1.1. 新建内部变量 computer_score: int, player_score: int 并将它们归 0
+    # 新建内部变量 computer_score: int, player_score: int 并将它们归 0
     computer_score, player_score = 0, 0
-    # TODO: 1.2. 新建内部变量 counters: dict 用于计数玩家的偏好用于记仇 AI 
+    # 新建内部变量 counters: dict 用于计数玩家的偏好用于记仇 AI 
     counters = {'r': 0, 'p': 0, 's': 0}
-    # TODO: 1.3. (可选) 新建一个用来计数玩家连续出某个选择的计数器变量
-    # TODO: 1.4. 新建一个游戏局数记录，每 10 局问一下玩家是否还要继续玩
+    # TODO: 1.3. 新建一个用来计数玩家连续出某个选择的计数器变量给贪婪 AI
+
+    # 新建一个游戏局数记录，每 10 局问一下玩家是否还要继续玩
     game_count = 0
 
     while game_running:
-        # TODO: 2.1. 让玩家选择在 OPTIONS 出招。
+        # 让玩家选择在 OPTIONS 出招。
         player_choice = input('请选择出什么 (r/p/s): ')
 
-        # TODO：2.2. 如果玩家选择无效，则让玩家重新选。
+        # 如果玩家选择无效，则让玩家重新选。
         if player_choice not in OPTION:
             # 直接清屏重来
             clear(0)
 
-        # TODO：2.3. 如果玩家选择的有效，则让 AI 选择。
+        # 如果玩家选择的有效，则让 AI 选择。
         else:
             # 更新计数板
             counters[player_choice] = counters[player_choice] + 1
@@ -65,10 +64,10 @@ def main_loop() -> None:
                 ai_choice == revenge_ai(OPTION, counters)
             
             # 贪婪 AI
-            # 不提供参考答案
+            # N/A
 
 
-        # TODO：2.4. 比较谁获胜，相应加分。
+        # 比较谁获胜，相应加分。
             if (player_choice == 'r' and ai_choice == 'p') or \
             (player_choice == 'p' and ai_choice == 's') or \
             (player_choice == 's' and ai_choice == 'r'):
@@ -98,7 +97,7 @@ def main_loop() -> None:
                     game_running = game_state(game_running)
 
 
-#### 必要程式
+#### 程式
 
 def random_ai(option: list) -> Any:
     """随机选择的 AI, 序号是 0
@@ -109,8 +108,6 @@ def random_ai(option: list) -> Any:
     """
     return random.choice(option)
 
-
-#### 其他程式：
 
 def rock_ai(option: list) -> Any:
     """喜欢出石头的 AI, 序号是 1.0, 出石头的几率是 0.5
